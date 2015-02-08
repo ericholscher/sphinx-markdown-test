@@ -6,7 +6,7 @@
 Welcome to Test's documentation!
 ================================
 
-Contents:
+This page is using RST and a toctree
 
 .. toctree::
    :maxdepth: 2
