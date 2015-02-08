@@ -7,3 +7,12 @@ Foo in **Markdown**, which means we can do **inline *italics* like whoa**
 More second-level content
 
 [Link](http://woo.rtfd.org)
+
+
+List:
+
+* Item 1
+* Item 2
+* Item 3
+
+Not list

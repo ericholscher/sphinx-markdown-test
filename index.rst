@@ -10,8 +10,11 @@ This page is using RST and a toctree
 
 .. toctree::
    :maxdepth: 2
+   :glob:
 
    foo
+   www/docs/conf/na/*
+   
 
 
 
