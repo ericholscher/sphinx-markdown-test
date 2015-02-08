@@ -1,0 +1,1 @@
+Search.setIndex({envversion:46,filenames:["foo","index"],objects:{},objnames:{},objtypes:{},terms:{can:0,content:[0,1],foo:0,index:1,inlin:0,ital:0,level:0,like:0,link:0,markdown:0,mean:0,modul:1,more:0,page:1,search:1,second:0,which:0,whoa:0},titles:["Header","Welcome to Test&#8217;s documentation!"],titleterms:{"2nd":0,document:1,header:0,indic:1,tabl:1,test:1,welcom:1}})
