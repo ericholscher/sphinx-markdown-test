@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction to Sphinx &mdash; Test test documentation</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="Test test documentation" href="../../../../index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../../index.html" class="fa fa-home"> Test</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../foo.html">Header</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../foo.html#md-2nd-header">MD 2nd header</a></li>
+</ul>
+</li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Test</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Introduction to Sphinx</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="../../../../_sources/www/docs/guide/tools/sphinx.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="introduction-to-sphinx">
+<h1>Introduction to Sphinx<a class="headerlink" href="#introduction-to-sphinx" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="philosophy">
+<h2>Philosophy<a class="headerlink" href="#philosophy" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://sphinx-doc.org/">Sphinx</a> is what is called a documentation
+generator. This means that it takes a bunch of source files in plain
+text, and generates a bunch of other awesome things, mainly HTML. For
+our use case you can think of it as a program that takes in plain text
+files in <a class="reference external" href="http://sphinx-doc.org/rest.html">reStructuredText</a> format, and
+outputs HTML.</p>
+<pre class="literal-block">
+reST -&gt; Sphinx -&gt; HTML
+reST -&gt; Sphinx -&gt; HTML
+</pre>
+<p>So as a user of Sphinx, your main job will be writing these text files.
+This means that you should be minimally familiar with
+<a class="reference external" href="http://sphinx-doc.org/rest.html">reStructuredText</a> as a language. It&#8217;s
+similar to Markdown in a lot of ways. It&#8217;s a lot more powerful than
+Markdown, but with that power comes increased complexity. Just know that
+some of the awkward syntax allows you to do more interesting things
+further down the line. In particular, it is extensible: it has a formal
+way of adding markup directives that allow more sophisticated parsing.
+For example, Sphinx includes directives to relate documentation of
+modules, classes and methods to the corresponding code.</p>
+</div>
+<div class="section" id="installing-sphinx">
+<h2>Installing Sphinx<a class="headerlink" href="#installing-sphinx" title="Permalink to this headline">¶</a></h2>
+<p>The first step to getting going is installing
+<a class="reference external" href="http://sphinx-doc.org/">Sphinx</a>. Sphinx is a python project, so it can
+be installed like any other python library. Several Operating Systems
+(Mac OS X, Major Versions of Linux/BSD) have Python pre-installed, so
+you should just have to run:</p>
+<pre class="literal-block">
+sudo easy_install Sphinx
+sudo easy_install Sphinx
+</pre>
+<p>Instructions for installing Python and Sphinx on Windows can be found at
+the <a class="reference external" href="http://sphinx-doc.org/install.html#windows-install-python-and-sphinx">Sphinx install
+page</a>.</p>
+<blockquote>
+<div><p><strong>note</strong></p>
+<p>Advanced users can install this in a virtualenv if they wish.
+:   Also, <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">Sphinx</span></code> works fine if you have Pip.</p>
+</div></blockquote>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>You&#8217;ll want to read the <a class="reference external" href="http://sphinx-doc.org/tutorial.html#setting-up-the-documentation-sources">Sphinx
+Tutorial</a>,
+as it provides an introduction to a lot of the basic ideas. For the most
+part documentation follows a standard structure for our documentation
+repository:</p>
+<pre class="literal-block">
+project/
+project/
+    docs/
+docs/
+        conf.py
+conf.py
+        index.rst
+index.rst
+        Makefile
+Makefile
+</pre>
+<p>We have a top-level <code class="docutils literal"><span class="pre">docs</span></code> directory in the main project directory.
+Inside of this is:</p>
+<p><code class="docutils literal"><span class="pre">index.rst</span></code>:
+:   This is the index file for the documentation, or what lives at <code class="docutils literal"><span class="pre">/</span></code>.
+It normally contains a <em>Table of Contents</em> that will link to all
+other pages of the documentation.</p>
+<p><code class="docutils literal"><span class="pre">conf.py</span></code>: which allows for customization of the output.
+:   For the most part this shouldn&#8217;t need to be changed.</p>
+<p><code class="docutils literal"><span class="pre">Makefile</span></code>: This ships with sphinx,
+:   and is the main interface for local development, but shouldn&#8217;t be
+changed.</p>
+<p>Other <code class="docutils literal"><span class="pre">*.rst</span></code> files for specific subsections of documentation.</p>
+</div>
+<div class="section" id="writing-docs">
+<h2>Writing docs<a class="headerlink" href="#writing-docs" title="Permalink to this headline">¶</a></h2>
+<p>Where you write your documentation will vary based on how the project is
+layed out. Generally major topics will go in an aptly named file in the
+top-level docs directory. If a topic gets larger, it can then be broken
+out into multiple files in a directory. When you write a document,
+figure out if there is already a place for it in the project, otherwise
+feel free to start a new file.</p>
+<blockquote>
+<div><p><strong>warning</strong></p>
+<p>If you make a new file, make sure it is included in the <em>Table of
+Contents</em> in <code class="docutils literal"><span class="pre">index.rst</span></code>.</p>
+</div></blockquote>
+<div class="section" id="restructuredtext">
+<h3>reStructuredText<a class="headerlink" href="#restructuredtext" title="Permalink to this headline">¶</a></h3>
+<p>To write nice looking documentation you will need to have a basic
+understanding of RST as a language. The <a class="reference external" href="http://sphinx.pocoo.org/rest.html#rst-primer">reStructuredText
+Primer</a> is a great place
+to start reading, and it covers most of the syntax you will care about.
+The main parts you will need at first are:</p>
+<ul class="simple">
+<li><strong>Inline Markup</strong></li>
+<li><strong>Source Code</strong></li>
+<li><strong>Hyperlinks</strong></li>
+<li><strong>Sections</strong></li>
+<li><strong>Directives</strong></li>
+</ul>
+<blockquote>
+<div><p><strong>note</strong></p>
+<p>You can live-preview RST on the web: <a class="reference external" href="http://rst.ninjs.org/">http://rst.ninjs.org/</a>
+:   . Note that it won&#8217;t understand Sphinx-specific markup though.</p>
+</div></blockquote>
+<p>Feel free to play around with RST a bit to make sure that you understand
+how it works.</p>
+<blockquote>
+<div><p><strong>warning</strong></p>
+<p>RST is white-space sensitive in places.
+:   If it is acting weirdly, make sure you indent lines that are part
+of the same content similarly.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="building-docs">
+<h2>Building docs<a class="headerlink" href="#building-docs" title="Permalink to this headline">¶</a></h2>
+<p>Once you have your documentation written and want to turn it into HTML,
+it&#8217;s pretty simple. Simply run:</p>
+<pre class="literal-block">
+# Inside top-level docs/ directory.
+# Inside top-level docs/ directory.
+make html
+make html
+</pre>
+<p>This should run Sphinx in your shell, and output HTML. At the end, it
+should say something about the documents being ready in <code class="docutils literal"><span class="pre">_build/html</span></code>.
+You can now open them in your browser by typing:</p>
+<pre class="literal-block">
+open _build/html/index.html
+open _build/html/index.html
+</pre>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Test.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../',
+            VERSION:'test',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

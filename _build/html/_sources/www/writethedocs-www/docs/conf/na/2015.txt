@@ -1,0 +1,142 @@
+template: conf.2015.html
+
+# About
+
+Join us for a three-day event to explore the art and science of
+documentation. You can look forward to learning more about
+documentation systems, tech writing theory, information delivery, and
+more. Past talks have also covered such diverse topics as typography,
+empathy, and [Wabi-sabi][wabisabi].
+
+The main event takes place from **May 18-19 (Monday and Tuesday) from
+9am to 6pm**.  We will return to the historic [Crystal
+Ballroom][crystal-ballroom], [centrally
+located](http://goo.gl/maps/D2WrJ) in the heart of Portland.
+
+<div class="row row-images">
+  <div class="col-md-6 col-sm-6">
+    <img src="https://farm8.staticflickr.com/7443/14198154853_0cddd983b6_c.jpg" />
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <img src="https://farm8.staticflickr.com/7369/13991334230_27e72622c2_c.jpg" />
+  </div>
+</div>
+
+##### News
+
+* [Announcing Write the Docs NA 2015](/news/announcing-2015)
+* [Announcing Call for Proposals and Ticket Prices](/news/cfp-ticket-prices)
+
+**Can't wait? Check out the [videos from last year](https://www.youtube.com/playlist?list=PLmV2D6sIiX3UkFCMqq5at0xYgsMqAr6Jf)**.
+
+## Speak
+
+Have something you want to share with the community?  Head over to our
+[Call for Proposals](cfp.md) for more information, and to submit your
+talk.
+
+The deadline for submitting your proposal is **Midnight PST on February
+28**.
+
+## Tickets
+
+Tickets are on sale now! We do expect the event to sell out, so don't
+wait to purchase.
+
+<tito-button event="writethedocs/write-the-docs-na-2015">Buy Tickets!</tito-button>
+
+#### Corporate Tickets
+
+Purchase this ticket if a company is paying for your attendance.
+Companies interested in sponsorship can also receive tickets to the
+conference with a [sponsorship package](#sponsors).
+
+* $200 Corporate Early Bird
+* $250 Corporate Regular
+
+#### Independent Tickets
+
+Purchase this ticket if you are paying for yourself, work at a
+non-profit, or at a company with less than 10 employees.
+
+* $100 Independent Early Bird
+* $150 Independent Regular
+
+#### Student or Unemployed
+
+Purchase this ticket if you are currently enrolled as a student, or
+don't currently have a source of income.
+
+* $75 Student or Unemployed Tickets
+
+#### Financial Assistance
+
+If you can't afford these prices and still wish to attend, please email
+us at [conf@writethedocs.org][conf-email] and we can work something out.
+
+## Events
+
+Write the Docs is more than a conference. Each year we organize a wide
+bunch of events so that people can get to know each other better. This
+year we're expanding those activities into a full third day of fun.
+These events are optional, but we recommend you come into town Saturday
+or early Sunday to participate.
+
+This year, those events will include:
+
+#### Hike - Saturday afternoon
+Enjoy the majestic beauty of Portland with this walk in the woods.
+
+#### Writing Day - Sunday, all day
+Get together and *write the docs* with your fellow documentarians. This
+is a great opportunity to learn from others and share your knowledge.
+Document your own projects, or contribute to an open-source project such
+as Wordpress or Mozilla Developer Network.
+
+#### Conference Reception - Sunday night
+Come early, get your badge and get to know other attendees.
+
+#### Official Party - Monday night
+Wind down and talk about the days talks in a relaxed and friendly
+environment.
+
+<div class="row row-images">
+  <div class="col-md-6 col-sm-6">
+    <img src="https://farm8.staticflickr.com/7359/14171848131_734e95d87d_c.jpg" />
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <img src="https://farm8.staticflickr.com/7437/14175146165_f6d22c5c3b_c.jpg" />
+  </div>
+</div>
+
+## Sponsors
+
+We are seeking corporate partners to help us create the best conference
+possible. Contact us at [sponsorships@writethedocs.org][sponsorships]
+for more information on sponsoring Write the Docs.
+
+## Contact Us
+
+If you wish to receive more information as it becomes available, follow
+us on Twitter at [@writethedocs][twitter] or sign up for our mailing
+list:
+
+<div id="mc_embed_signup">
+<form action="http://writethedocs.us6.list-manage.com/subscribe/post?u=94377ea46d8b176a11a325d03&amp;id=dcf0ed349b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+<div class="mc-field-group input-append">
+<input placeholder="Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL" type="email">
+<input value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" type="submit">
+</div>
+<div id="mce-responses" class="clear">
+<div class="response" id="mce-error-response" style="display:none"></div>
+<div class="response" id="mce-success-response" style="display:none"></div>
+</div>
+</form>
+</div>
+
+[crystal-ballroom]: http://www.mcmenamins.com/CrystalBallroom
+[wabisabi]: http://en.wikipedia.org/wiki/Wabi-sabi
+[twitter]: https://twitter.com/writethedocs
+[mailing-list]: http://eepurl.com/I37rP
+[sponsorships]: mailto:sponsorships@writethedocs.org
+[conf-email]: mailto:conf@writethedocs.org

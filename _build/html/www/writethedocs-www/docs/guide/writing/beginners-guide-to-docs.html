@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>A beginners guide to writing documentation &mdash; Test test documentation</title>
+    
+    <link rel="stylesheet" href="../../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     'test',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="Test test documentation" href="../../../../../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../../../../index.html">Test test documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="a-beginners-guide-to-writing-documentation">
+<h1>A beginners guide to writing documentation<a class="headerlink" href="#a-beginners-guide-to-writing-documentation" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p><strong>note</strong></p>
+<p>This is a write up of a Presentation &lt;beginner-presentation&gt;.
+:   Please provide feedback to
+<a class="reference external" href="http://twitter.com/ericholscher">&#64;ericholscher</a>. You can view the
+source on
+<a class="reference external" href="https://github.com/writethedocs/docs/blob/master/docs/writing/beginners-guide-to-docs.rst">GitHub</a>.</p>
+</div></blockquote>
+<blockquote>
+<div>Camera pans from stage left.
+It shows a text editor, open to a blank page.
+A person hunched in front, head to desk.</div></blockquote>
+<p>The scene above is well known to everyone who writes for a living; the
+mixed emotions of a blank page. Full of excitement, fresh with a new
+beginning. Yet also full of despair, where do you even start?</p>
+<p>I am here to stop this scene from playing out.</p>
+<p>This is a guide to documenting your first project. The first time is
+always the hardest, and I hope this guide will get you started down the
+righteous path. At the end, you should have a project that is ready for
+public release.</p>
+<p>Feel free to read this document straight through, or simply use it as a
+reference.</p>
+<div class="section" id="why-write-docs">
+<h2>Why write docs<a class="headerlink" href="#why-write-docs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="you-will-be-using-your-code-in-6-months">
+<h3>You will be using your code in 6 months<a class="headerlink" href="#you-will-be-using-your-code-in-6-months" title="Permalink to this headline">¶</a></h3>
+<p>I find it best to start off with a selfish appeal. The best reason to
+write docs is because you will be using your code in 6 months. Code that
+you wrote 6 months ago is often indistinguishable from code that someone
+else has written. You will look upon a file with a fond sense of
+remembrance. Then a sneaking feeling of foreboding, knowing that someone
+less experienced, less wise, had written it.</p>
+<p>As you go through this selfless act of untangling things that were
+obvious or clever months ago, you will start to empathize with your
+users. If only I had written down why I had done this. Life would be so
+much simpler. Documentation allows you to transfer the <em>why</em> behind
+code. Much in the same way code comments explain the <em>why</em>, and not the
+<em>how</em>, documentation serves the same purpose.</p>
+<blockquote>
+<div><p><strong>Sidebar on open source</strong></p>
+<p>There is a magical feeling that happens when you release your code. It
+comes in a variety of ways, but it always hits you the same. <em>Someone
+is using my code?!</em> A mix of terror and excitement.</p>
+<blockquote>
+<div>I made something of value!What if it breaks?!I am a real open source developer!Oh god, someone else is using my code..</div></blockquote>
+<p>Writing good documentation will help alleviate some of these fears. A
+lot of this fear comes from putting something into the world. My
+favorite quote about this is something along these lines:</p>
+<blockquote>
+<div>Fear is what happens when you&#8217;re doing something important.If you are doing work that isn&#8217;t scary,it isn&#8217;t improving you or the world.</div></blockquote>
+<p>Congrats on being afraid! It means you&#8217;re doing something important.</p>
+</div></blockquote>
+</div>
+<div class="section" id="you-want-people-to-use-your-code">
+<h3>You want people to use your code<a class="headerlink" href="#you-want-people-to-use-your-code" title="Permalink to this headline">¶</a></h3>
+<p>You have written a piece of code, and released it into the world. You
+have done this because you think that others might find it useful.
+However, people need to understand why your code might be useful for
+them, before they decide to use it. Documentation tells people that this
+project is for them.</p>
+<blockquote>
+<div>If people don&#8217;t know why your project exists,they won&#8217;t use it.If people can&#8217;t figure out how to install your code,they won&#8217;t use it.If people can&#8217;t figure out how to use your code,they won&#8217;t use it.</div></blockquote>
+<p>There are a small number of people who will source dive and use any code
+out there. That is a vanishingly small number of people, compared to
+people who will use your code when properly documented. If you really
+love your project, document it, and let other people use it.</p>
+</div>
+<div class="section" id="you-want-people-to-help-out">
+<h3>You want people to help out<a class="headerlink" href="#you-want-people-to-help-out" title="Permalink to this headline">¶</a></h3>
+<p>Open source is this magical thing right? You release code, and the code
+gnomes come and make it better for you.</p>
+<p>Not quite.</p>
+<p>There are lots of ways that open source is amazing, but it doesn&#8217;t exist
+outside the laws of physics. You have to put work in, to get work out.</p>
+<blockquote>
+<div>You only get contributions after you have put in a lot of work.You only get contributions after you have users.You only get contributions after you have documentation.</div></blockquote>
+<p>Documentation also provides a platform for your first contributions. A
+lot of people have never contributed before, and documentation changes
+are a lot less scary than code changes. If you don&#8217;t have documentation,
+you will miss out on a whole class of contributors.</p>
+</div>
+<div class="section" id="it-makes-your-code-better">
+<h3>It makes your code better<a class="headerlink" href="#it-makes-your-code-better" title="Permalink to this headline">¶</a></h3>
+<p>There is an old truth that writing things down helps you think. It&#8217;s
+really easy to have an idea in your head that sounds perfect, but the
+act of putting words to paper requires a distillation of thought.</p>
+<p>Writing documentation improves the design of your code. Talking through
+your API and design decisions on paper allows you to think about them in
+a more formalized way. A nice side effect is that it allows people to
+contribute code that follows your original intentions as well.</p>
+</div>
+<div class="section" id="you-want-to-be-a-better-writer">
+<h3>You want to be a better writer<a class="headerlink" href="#you-want-to-be-a-better-writer" title="Permalink to this headline">¶</a></h3>
+<p>Writing documentation is a different form of writing than most people
+have experience with. Technical writing is an art that doesn&#8217;t come
+naturally. Writing documentation will start you down the road to being a
+better technical writer, which is a useful skill to have as a
+programmer.</p>
+<p>Writing also becomes easier over time. If you don&#8217;t write for many
+months, it is a lot harder to start writing again. Keeping your projects
+documented will keep you writing at a reasonable cadence.</p>
+</div>
+</div>
+<div class="section" id="what-technology">
+<h2>What technology<a class="headerlink" href="#what-technology" title="Permalink to this headline">¶</a></h2>
+<p>Starting simple is the best way to achieve actual results. I will
+present a well-paved path to walk down, and after you have the basic
+idea, you can expand your scope. The tools should be powerful and easy
+to use. This removes obstacles to actually putting words on the page.</p>
+<blockquote>
+<div><p><strong>Sidebar on markup languages.</strong></p>
+<p>The examples in this document are both valid
+<a class="reference external" href="http://daringfireball.net/projects/markdown/">Markdown</a> and
+<a class="reference external" href="http://sphinx-doc.org/rest.html#rst-primer">reStructuredText</a>.
+reStructuredText is a bit harder to use, but is more powerful. I
+recommend that you check them both out, and decide which you want to
+use going forward.</p>
+</div></blockquote>
+<div class="section" id="version-controlled-plain-text">
+<h3>Version controlled plain text<a class="headerlink" href="#version-controlled-plain-text" title="Permalink to this headline">¶</a></h3>
+<p>As programmers we live in a world of plain text. Our documentation
+tooling should be no exception. We want tools that turn plain text into
+pretty HTML. We also have some of the best tooling available for
+tracking changes to files. Why would we forgo using those tools when
+writing documentation? This workflow is powerful, and familiar to
+developers.</p>
+</div>
+<div class="section" id="basic-example">
+<h3>Basic Example<a class="headerlink" href="#basic-example" title="Permalink to this headline">¶</a></h3>
+<pre class="literal-block">
+Resources
+Resources
+---------
+---------
+
+
+* Online documentation: http://docs.writethedocs.org/
+* Online documentation: http://docs.writethedocs.org/
+* Conference: http://conf.writethedocs.org/
+* Conference: http://conf.writethedocs.org/
+</pre>
+<p>This will render into a header, with a list underneath it. The URLs will
+be hyperlinked automatically. It&#8217;s easy to write, still makes sense as
+plain text, and renders nicely into HTML.</p>
+</div>
+<div class="section" id="readme">
+<h3>README<a class="headerlink" href="#readme" title="Permalink to this headline">¶</a></h3>
+<p>Your first steps in documentation should go into your README. Code
+hosting services will render your README into HTML automatically if you
+provide the proper extension. It is also the first interaction that most
+users will have with your project. So having a solid README will serve
+your project well.</p>
+<p>Some people even go as far as to <a class="reference external" href="http://tom.preston-werner.com/2010/08/23/readme-driven-development.html">start your project with a
+README</a></p>
+</div>
+</div>
+<div class="section" id="what-to-write">
+<h2>What to write<a class="headerlink" href="#what-to-write" title="Permalink to this headline">¶</a></h2>
+<p>Now we&#8217;re getting down to the brass tacks. Making sure that you give
+your users all the information that they need, but not too much.</p>
+<p>First, you need to ask yourself who you&#8217;re writing for. At first, you
+generally just need to appeal to two audiences:</p>
+<ul class="simple">
+<li>Users</li>
+<li>Developers</li>
+</ul>
+<p>Users are people who simply want to use your code, and don&#8217;t care how it
+works. Developers are people who want to contribute back to your code.</p>
+<div class="section" id="what-problem-your-project-solves">
+<h3>What problem your project solves<a class="headerlink" href="#what-problem-your-project-solves" title="Permalink to this headline">¶</a></h3>
+<p>A lot of people will come to your docs trying to figure out what exactly
+your project is. Someone will mention it, or they&#8217;ll google a phrase
+randomly. You should explain what your project does and why it exists.
+<a class="reference external" href="http://docs.fabfile.org/">Fabric</a> does a great job of this.</p>
+</div>
+<div class="section" id="a-small-code-example">
+<h3>A small code example<a class="headerlink" href="#a-small-code-example" title="Permalink to this headline">¶</a></h3>
+<p>Show a telling example of what your project would normally be used for.
+<a class="reference external" href="http://docs.python-requests.org/en/latest/index.html">Requests</a> does a
+great example of this.</p>
+</div>
+<div class="section" id="a-link-to-your-code-issue-tracker">
+<h3>A link to your code &amp; issue tracker<a class="headerlink" href="#a-link-to-your-code-issue-tracker" title="Permalink to this headline">¶</a></h3>
+<p>People like to browse the code sometimes. They might be interested in
+filing bugs against the code for issues they&#8217;ve found. Make it really
+easy for people who want to contribute back to the project in any way
+possible. I think the <a class="reference external" href="http://docs.python-guide.org/en/latest/index.html">Python
+Guide</a> does a good
+job with the link to the code portion.</p>
+</div>
+<div class="section" id="frequently-asked-questions-faq">
+<h3>Frequently Asked Questions (FAQ)<a class="headerlink" href="#frequently-asked-questions-faq" title="Permalink to this headline">¶</a></h3>
+<p>A lot of people have the same problems. If things happen all the time,
+you should probably fix your documentation or the code, so that the
+problems go away. However, there are always questions that get asked
+about your project, things that can&#8217;t be changed, etc. Document those,
+and <strong>keep it up to date</strong>. FAQs are generally out of date, but when
+done well, they are a golden resource.
+<a class="reference external" href="http://django-tastypie.readthedocs.org/en/latest/cookbook.html">Tastypie</a>
+did a great job with this, with their &#8220;Cookbook&#8221; concept.</p>
+</div>
+<div class="section" id="how-to-get-support">
+<h3>How to get support<a class="headerlink" href="#how-to-get-support" title="Permalink to this headline">¶</a></h3>
+<p>Mailing list? IRC Channel? Document how to get help and interact with
+the community around a project.
+<a class="reference external" href="https://docs.djangoproject.com/en/1.3/#getting-help">Django</a> does a
+great job with this.</p>
+</div>
+<div class="section" id="information-for-people-who-want-to-contribute-back">
+<h3>Information for people who want to contribute back<a class="headerlink" href="#information-for-people-who-want-to-contribute-back" title="Permalink to this headline">¶</a></h3>
+<p>People usually have standards for how they expect things to be done in
+their projects. You should document these so that if people write code,
+they can do things in the norm of the project. <a class="reference external" href="http://opencomparison.readthedocs.org/en/latest/contributing.html">Open
+Comparison</a>
+does a great job of this.</p>
+</div>
+<div class="section" id="installation-instructions">
+<h3>Installation instructions<a class="headerlink" href="#installation-instructions" title="Permalink to this headline">¶</a></h3>
+<p>Once people figure out whether they want to use your code or not, they
+need to know how to actually get it and make it run. Hopefully your
+install instructions should be a couple lines for the basic case. A page
+that gives more information and caveats should be linked from here if
+necessary. I think at <a class="reference external" href="http://read-the-docs.readthedocs.org/en/latest/install.html">Read the
+Docs</a> we do
+a good job with this.</p>
+</div>
+<div class="section" id="your-project-s-license">
+<h3>Your project&#8217;s license<a class="headerlink" href="#your-project-s-license" title="Permalink to this headline">¶</a></h3>
+<p>BSD? MIT? GPL? This stuff might not matter to you, but the people who
+want to use your code will care about this a whole lot. Think about what
+you want to accomplish with your license, and please only pick one of
+the standard licenses that you see around the web.</p>
+</div>
+</div>
+<div class="section" id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
+<p>After you follow the above guide, we know your project will be
+successful! For further reading, check out this post on <a class="reference external" href="https://medium.com/p/aaa2a5437d3a">how to maintain
+an open source project</a>.</p>
+</div>
+<div class="section" id="template">
+<h2>Template<a class="headerlink" href="#template" title="Permalink to this headline">¶</a></h2>
+<p>A simple template for you to start with, for your <code class="docutils literal"><span class="pre">README</span></code>. Name the
+file <code class="docutils literal"><span class="pre">README.md</span></code> if you want to use markdown, or <code class="docutils literal"><span class="pre">README.rst</span></code> if you
+want to use reStructuredText. More information about these can be found
+in the sidebar on markup &lt;markup_languages&gt;.</p>
+<pre class="literal-block">
+$project
+$project
+========
+========
+
+
+$project will solve your problem of where to start with documentation,
+$project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+by providing a basic explanation of how to do it easily.
+
+
+Look how easy it is to use:
+Look how easy it is to use:
+
+
+    import project
+import project
+    # Get your stuff done
+# Get your stuff done
+    project.do_stuff()
+project.do_stuff()
+
+
+Features
+Features
+--------
+--------
+
+
+- Be awesome
+- Be awesome
+- Make things faster
+- Make things faster
+
+
+Installation
+Installation
+------------
+------------
+
+
+Install $project by running:
+Install $project by running:
+
+
+    install project
+install project
+
+
+Contribute
+Contribute
+----------
+----------
+
+
+- Issue Tracker: github.com/$project/$project/issues
+- Issue Tracker: github.com/$project/$project/issues
+- Source Code: github.com/$project/$project
+- Source Code: github.com/$project/$project
+
+
+Support
+Support
+-------
+-------
+
+
+If you are having issues, please let us know. 
+If you are having issues, please let us know. 
+We have a mailing list located at: project&#64;google-groups.com
+We have a mailing list located at: project&#64;google-groups.com
+
+
+License
+License
+-------
+-------
+
+
+The project is licensed under the BSD license.
+The project is licensed under the BSD license.
+</pre>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">A beginners guide to writing documentation</a><ul>
+<li><a class="reference internal" href="#why-write-docs">Why write docs</a><ul>
+<li><a class="reference internal" href="#you-will-be-using-your-code-in-6-months">You will be using your code in 6 months</a></li>
+<li><a class="reference internal" href="#you-want-people-to-use-your-code">You want people to use your code</a></li>
+<li><a class="reference internal" href="#you-want-people-to-help-out">You want people to help out</a></li>
+<li><a class="reference internal" href="#it-makes-your-code-better">It makes your code better</a></li>
+<li><a class="reference internal" href="#you-want-to-be-a-better-writer">You want to be a better writer</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#what-technology">What technology</a><ul>
+<li><a class="reference internal" href="#version-controlled-plain-text">Version controlled plain text</a></li>
+<li><a class="reference internal" href="#basic-example">Basic Example</a></li>
+<li><a class="reference internal" href="#readme">README</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#what-to-write">What to write</a><ul>
+<li><a class="reference internal" href="#what-problem-your-project-solves">What problem your project solves</a></li>
+<li><a class="reference internal" href="#a-small-code-example">A small code example</a></li>
+<li><a class="reference internal" href="#a-link-to-your-code-issue-tracker">A link to your code &amp; issue tracker</a></li>
+<li><a class="reference internal" href="#frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</a></li>
+<li><a class="reference internal" href="#how-to-get-support">How to get support</a></li>
+<li><a class="reference internal" href="#information-for-people-who-want-to-contribute-back">Information for people who want to contribute back</a></li>
+<li><a class="reference internal" href="#installation-instructions">Installation instructions</a></li>
+<li><a class="reference internal" href="#your-project-s-license">Your project&#8217;s license</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#next-steps">Next Steps</a></li>
+<li><a class="reference internal" href="#template">Template</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../../_sources/www/writethedocs-www/docs/guide/writing/beginners-guide-to-docs.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../../../../index.html">Test test documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, Test.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b3.
+    </div>
+  </body>
+</html>
