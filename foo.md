@@ -1,8 +1,8 @@
-## Header
+## Markdown Header
 
 Foo in **Markdown**, which means we can do **inline *italics* like whoa**
 
-#### MD 2nd header
+#### Markdown 4th level header
 
 More second-level content
 
