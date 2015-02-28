@@ -1,0 +1,6 @@
+sphinx-rtd-theme
+
+git+https://github.com/ericholscher/sphinx#egg=Sphinx
+git+git@github.com:ericholscher/recommonmark.git#egg=recommonmark
+git+git@github.com:ericholscher/CommonMark-py.git#egg=CommonMark
+
