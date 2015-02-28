@@ -15,7 +15,6 @@
 import sys
 import os
 
-from recommonmark.parser import CommonMarkParser
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -279,6 +278,8 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+from recommonmark.parser import CommonMarkParser
 
 # The suffix of source filenames.
 source_suffix = ['.rst', '.md']
