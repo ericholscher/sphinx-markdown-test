@@ -1,9 +1,16 @@
 ## Markdown Header
 
-Foo in **Markdown**, which means we can do **inline *italics* like whoa**
+Foo in **Markdown**, which means we can do **inline *italics* like this**
 
-#### Markdown 4th level header
+#### Markdown Lower Header
 
-More second-level content
+More second-level content.
 
-[Link](http://woo.rtfd.org)
+[A link](http://rtfd.org)
+
+You can even do:
+
+```bash
+
+Code blocks
+```

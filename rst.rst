@@ -1,6 +1,3 @@
-
-This is RST
-
 RST Header
 -----------
 
@@ -10,5 +7,8 @@ RST Header
 2nd level rst header
 ~~~~~~~~~~~~~~~~~~~~
 
-
 More content
+
+.. code-block:: 
+
+   print "Hello world"
