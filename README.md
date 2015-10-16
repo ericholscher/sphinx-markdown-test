@@ -2,7 +2,9 @@
 
 This is an example repo that has both RST and MD processed by Sphinx.
 
-Just do:
+You can see it rendered at https://sphinx-markdown-test.readthedocs.org/en/latest/
+
+To try it our yourself:
 
 ```bash
 
