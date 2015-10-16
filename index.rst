@@ -1,17 +1,17 @@
 Markdown test
-------------------------
+-------------
 
 Markdown files:
 
 .. toctree::
    :glob:
 
-   foo
+   markdown
 
 RST files:
 
 .. toctree::
    :glob:
 
-   test
+   rst
 
